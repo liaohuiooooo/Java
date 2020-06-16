@@ -13,6 +13,7 @@ public class TestActionListener01{
 		JLabel jl = new JLabel("院系:");
 		//JTextField jtf = new JTextField(15);
 		jtf =  new JTextField(15);
+		jtf.setText("例如:信息技术学院");
 		JButton jb = new JButton("提交");
 		
 		c.add(jl);
@@ -41,8 +42,5 @@ class Monitor implements ActionListener{
 			bw.close();
 		}catch(FileNotFoundException err){
 			System.out.println("该文件未找到.");
-		}catch(IOException err2){
-			
-		}
 	}
 }
